@@ -96,12 +96,11 @@ def findpush():
                 break;        
             #  當文章有簽名檔跳過文章
             if(flag1 !=1 and any (word in buffer1 for word in ban_word )):
-                if any (word in buffer1 for word in ban_word ):
                     continue
-                print(thread_board+" "+thread_title)
-                # await channel.send("```fix"+"\n"+thread_board+" "+thread_title+"\n"+"```")
-                print("https://www.ptt.cc"+thread_url['href']+".html")
-                # await channel.send("<https://www.ptt.cc"+thread_url['href']+".html>")
+            print(thread_board+" "+thread_title)
+            # await channel.send("```fix"+"\n"+thread_board+" "+thread_title+"\n"+"```")
+            print("https://www.ptt.cc"+thread_url['href']+".html")
+            # await channel.send("<https://www.ptt.cc"+thread_url['href']+".html>")
             # 分析單文章內全部推文
             for z in range(len(buffer1)):
                 print("推文位置 "+str(z))
